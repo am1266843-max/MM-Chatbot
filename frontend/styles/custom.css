@@ -1,0 +1,99 @@
+/* Modern, Polished Chatbot Styling */
+
+/* Main container spacing */
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+    max-width: 900px !important;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+    [data-testid="stSidebar"] {
+        background-color: #0f172a;
+        border-right: 1px solid #1e293b;
+    }
+}
+
+/* Chat message bubbles */
+.user-msg-bubble {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 18px 18px 4px 18px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.assistant-msg-bubble {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 18px 18px 18px 4px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Suggestion cards */
+.suggestion-card {
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.suggestion-card:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Citations & Sources box */
+.citation-box {
+    background-color: #f8fafc;
+    border-left: 3px solid #3b82f6;
+    padding: 8px 12px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    border-radius: 0 6px 6px 0;
+}
+
+.web-source-box {
+    background-color: #f0fdf4;
+    border-left: 3px solid #10b981;
+    padding: 8px 12px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Badge indicators */
+.badge-provider {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+
+.badge-vision {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    background-color: #fce7f3;
+    color: #be185d;
+}
+
